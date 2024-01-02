@@ -117,3 +117,15 @@ strong{
 span{
     margin-left: 10px;
 }
+
+p{
+    /* réglage mobile et + */
+    font-family:sans-serif;
+    font-size:16px;
+  }
+  @media screen and (min-width:640px){
+    p{
+     /* réglage à partir de 640px et + : corps un peu plus grand et même typo */
+      font-size:21px;
+    }
+  }
