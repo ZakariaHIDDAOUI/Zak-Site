@@ -117,15 +117,15 @@ strong{
 span{
     margin-left: 10px;
 }
-
-p{
-    /* réglage mobile et + */
-    font-family:sans-serif;
-    font-size:16px;
+/* Style par défaut pour tous les écrans */
+.container {
+    display: flex;
+    flex-direction: row;
   }
-  @media screen and (min-width:640px){
-    p{
-     /* réglage à partir de 640px et + : corps un peu plus grand et même typo */
-      font-size:21px;
+  
+  /* Style pour les écrans dont la largeur est inférieure ou égale à 768px */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
     }
   }
