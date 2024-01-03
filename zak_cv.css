@@ -71,7 +71,7 @@ h3{
     margin-left: 10%;
     color: #aed6dc;
     letter-spacing: .1rem;
-    font-size: 18px;
+    font-size: 10px;
 }
 hr.light{
  border-top: 2px solid #aed6dc;
@@ -117,15 +117,16 @@ strong{
 span{
     margin-left: 10px;
 }
-/* Style par défaut pour tous les écrans */
-.container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  /* Style pour les écrans dont la largeur est inférieure ou égale à 768px */
-  @media (max-width: 580px) {
-    .container {
-      flex-direction: column;
+
+
+@media screen and (max-width: 600px) {
+    h3 {
+        margin-right: 25px;
     }
-  }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
