@@ -117,7 +117,15 @@ strong{
 span{
     margin-left: 10px;
 }
-/* Pour la mis en page sur un téléphone*/
-.selector-for-some-widget {
-    box-sizing: content-box;
+/* Style par défaut pour tous les écrans */
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Style pour les écrans dont la largeur est inférieure ou égale à 768px */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
   }
